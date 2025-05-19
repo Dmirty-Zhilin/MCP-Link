@@ -29,7 +29,7 @@ RUN mkdir -p /app/config
 WORKDIR /app
 
 # Экспонирование порта
-EXPOSE 8888
+EXPOSE 8080
 
 # Запуск MCP-Link сервера
 CMD ["mcp-link", "serve", "--port", "8080", "--host", "0.0.0.0"]
